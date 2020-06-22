@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+html.open, body.open {
+  height: 100%;
+  overflow: hidden;
+}
+
+.welcome {
+  padding: 40px;
+  font-size: 62.5%;
+}
+
+body {
+  padding: 20px;
+  background-color: #262626;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  text-align: center;
+  margin: 20px 0 60px;
+}
+
+hr {
+  height: 1px;
+  color: #fff;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  float: right;
+}
+
+.home-title {
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+}
+
+.logout {
+  margin: 0 auto;
+  width: 70px;
+  text-align: center;
+  font-size: 1em;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: white;
+  background-color: #007aff;
+}
+
+.selection {
+  width: 1%;
+}
+
+.transferMoneyBtn {
+  margin: 0 auto;
+  padding: 10px;
+  line-height: 40px;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  background-color: #4cd964;
+}
+
+h6 {
+  margin-top: 0%;
+  margin-bottom: 10%;
+  display: relative;
+  font-size: 31px;
+  text-align: left;
+}
+
+h3 {
+  margin-top: 50px;
+}
+
+.wrapper {
+  width: 500px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(20%);
+}
+
+#amountToTransfer {
+  width: 10%;
+  height: 150%;
+}
+
+.submitTransferBtn {
+  background-color: #4cd964;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+main {
+  background-color: #2C3845;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 300;
+}
+
+table {
+  display: block;
+}
+
+tr, td, tbody, tfoot {
+  display: block;
+}
+
+thead {
+  display: none;
+}
+
+tr {
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+td:before {
+  content: attr(data-title);
+  color: #7a91aa;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-right: 10px;
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+thead th {
+  background-color: #202932;
+  color: #fff;
+  border: 1px solid #202932;
+}
+
+tfoot th {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #b8c4d2;
+}
+
+.deleteAccountBtn {
+  width: 90%;
+  text-align: center;
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  background-color: #FF3B30;
+  border-width: 0px;
+}
+
+.help-block {
+  color: #FF3B30;
+  font-size: 75%
+}
+
+.select:before {
+  display: none;
+}
+
+.transfer {
+  margin-top: 50px;
+}
+
+@media (min-width: 460px) {
+  td {
+    text-align: left;
+  }
+  td:before {
+    display: inline-block;
+    text-align: right;
+    width: 140px;
+  }
+
+  .select {
+    padding-left: 160px;
+  }
+}
+@media (min-width: 720px) {
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  td, th {
+    display: table-cell;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td {
+    border: 1px solid #28333f;
+  }
+  td:before {
+    display: none;
+  }
+
+  td, th {
+    padding: 10px;
+  }
+
+  tr:nth-child(2n+2) td {
+    background-color: #242e39;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+  .select {
+    padding: 10px;
+  }
+}  
